@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.nightrain.mediaselect.custom.CustomSquareImageView
+        android:id="@+id/iv_item_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:background="@drawable/bg_gif_hint"
+        android:ellipsize="middle"
+        android:paddingStart="@dimen/dp_13"
+        android:paddingTop="@dimen/dp_3"
+        android:paddingEnd="@dimen/dp_13"
+        android:paddingBottom="@dimen/dp_3"
+        android:singleLine="true"
+        android:text="动图"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/sp_12" />
+</FrameLayout>

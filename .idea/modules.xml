@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MediaManage.iml" filepath="$PROJECT_DIR$/.idea/modules/MediaManage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MediaSelect/MediaManage.MediaSelect.iml" filepath="$PROJECT_DIR$/.idea/modules/MediaSelect/MediaManage.MediaSelect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MediaManage.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MediaManage.app.iml" />
+    </modules>
+  </component>
+</project>
