@@ -417,8 +417,8 @@
     <dimen name="sp_7">7sp</dimen>
     <dimen name="sp_8">8sp</dimen>
     <dimen name="sp_9">9sp</dimen>
+    <string name="title_audio">音频选择</string>
     <string name="title_gif">GIF选择</string>
-    <string name="title_pdf">PDF选择</string>
     <string name="title_picture">图片选择</string>
     <string name="title_video">视频选择</string>
     <string name="toast_cancel">取消选择</string>

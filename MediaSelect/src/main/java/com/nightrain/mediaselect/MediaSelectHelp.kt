@@ -6,6 +6,7 @@ import androidx.annotation.ColorInt
 import androidx.fragment.app.Fragment
 import com.nightrain.mediaselect.listener.ImageLoadSubject
 import com.nightrain.mediaselect.listener.MediaSelectCallback
+import com.nightrain.mediaselect.ui.AudioSelectActivity
 import com.nightrain.mediaselect.ui.GIFSelectActivity
 import com.nightrain.mediaselect.ui.PictureSelectActivity
 import com.nightrain.mediaselect.ui.VideoSelectActivity
@@ -16,6 +17,7 @@ object MediaSelectHelp {
     var mPictureSelectCallback: MediaSelectCallback? = null
     var mGIFSelectCallback: MediaSelectCallback? = null
     var mVideoSelectCallback: MediaSelectCallback? = null
+    var mAudioSelectCallback: MediaSelectCallback? = null
 
     /**
      * 媒体选择库初始化
@@ -29,20 +31,26 @@ object MediaSelectHelp {
 
     class BuildSelectPicture {
         private var mTitleBackgroundColor = Color.BLACK
+        private var mIsDisplayGIF = false
 
         fun setTitleBackGroundColor(@ColorInt titleColor: Int): BuildSelectPicture {
             this.mTitleBackgroundColor = titleColor
             return this
         }
 
+        fun isDisplayGIF(isDisplayGIF: Boolean): BuildSelectPicture {
+            mIsDisplayGIF = isDisplayGIF
+            return this
+        }
+
         fun launch(activity: Activity, callback: MediaSelectCallback) {
             mPictureSelectCallback = callback
-            PictureSelectActivity.launchActivity(activity, mTitleBackgroundColor)
+            PictureSelectActivity.launchActivity(activity, mTitleBackgroundColor,mIsDisplayGIF)
         }
 
         fun launch(fragment: Fragment, callback: MediaSelectCallback) {
             mPictureSelectCallback = callback
-            PictureSelectActivity.launchActivity(fragment, mTitleBackgroundColor)
+            PictureSelectActivity.launchActivity(fragment, mTitleBackgroundColor,mIsDisplayGIF)
         }
     }
 
@@ -81,6 +89,25 @@ object MediaSelectHelp {
         fun launch(fragment: Fragment, callback: MediaSelectCallback) {
             mVideoSelectCallback = callback
             VideoSelectActivity.launchActivity(fragment, mTitleBackgroundColor)
+        }
+    }
+
+    class BuildSelectAudio {
+        private var mTitleBackgroundColor = Color.BLACK
+
+        fun setTitleBackGroundColor(@ColorInt titleColor: Int): BuildSelectAudio {
+            this.mTitleBackgroundColor = titleColor
+            return this
+        }
+
+        fun launch(activity: Activity, callback: MediaSelectCallback) {
+            mAudioSelectCallback = callback
+            AudioSelectActivity.launchActivity(activity, mTitleBackgroundColor)
+        }
+
+        fun launch(fragment: Fragment, callback: MediaSelectCallback) {
+            mAudioSelectCallback = callback
+            AudioSelectActivity.launchActivity(fragment, mTitleBackgroundColor)
         }
     }
 }

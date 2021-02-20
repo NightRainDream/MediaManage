@@ -12,43 +12,46 @@
 10-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml
 11
 12    <application>
-12-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:6:5-25:19
-13        <activity
-13-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:7:9-12:56
-14            android:name="com.nightrain.mediaselect.ui.VideoSelectActivity"
-14-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:8:13-51
-15            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|uiMode"
-15-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:9:13-90
-16            android:screenOrientation="portrait"
-16-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:10:13-49
-17            android:windowSoftInputMode="stateHidden|stateUnchanged"
-17-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:11:13-69
-18            tools:ignore="LockedOrientationActivity" />
-18-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:12:13-53
-19        <activity
-19-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:13:9-18:56
-20            android:name="com.nightrain.mediaselect.ui.GIFSelectActivity"
-20-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:14:13-49
-21            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|uiMode"
-21-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:15:13-90
-22            android:screenOrientation="portrait"
-22-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:16:13-49
-23            android:windowSoftInputMode="stateHidden|stateUnchanged"
-23-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:17:13-69
-24            tools:ignore="LockedOrientationActivity" />
-24-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:18:13-53
-25        <activity
-25-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:19:9-24:56
-26            android:name="com.nightrain.mediaselect.ui.PictureSelectActivity"
-26-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:20:13-53
-27            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|uiMode"
-27-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:21:13-90
-28            android:screenOrientation="portrait"
-28-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:22:13-49
-29            android:windowSoftInputMode="stateHidden|stateUnchanged"
-29-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:23:13-69
-30            tools:ignore="LockedOrientationActivity" />
-30-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:24:13-53
-31    </application>
-32
-33</manifest>
+12-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:6:5-26:19
+13        <activity android:name="com.nightrain.mediaselect.ui.AudioSelectActivity" />
+13-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:7:9-69
+13-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:7:19-57
+14        <activity
+14-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:8:9-13:56
+15            android:name="com.nightrain.mediaselect.ui.VideoSelectActivity"
+15-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:9:13-51
+16            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|uiMode"
+16-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:10:13-90
+17            android:screenOrientation="portrait"
+17-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:11:13-49
+18            android:windowSoftInputMode="stateHidden|stateUnchanged"
+18-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:12:13-69
+19            tools:ignore="LockedOrientationActivity" />
+19-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:13:13-53
+20        <activity
+20-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:14:9-19:56
+21            android:name="com.nightrain.mediaselect.ui.GIFSelectActivity"
+21-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:15:13-49
+22            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|uiMode"
+22-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:16:13-90
+23            android:screenOrientation="portrait"
+23-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:17:13-49
+24            android:windowSoftInputMode="stateHidden|stateUnchanged"
+24-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:18:13-69
+25            tools:ignore="LockedOrientationActivity" />
+25-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:19:13-53
+26        <activity
+26-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:20:9-25:56
+27            android:name="com.nightrain.mediaselect.ui.PictureSelectActivity"
+27-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:21:13-53
+28            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|uiMode"
+28-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:22:13-90
+29            android:screenOrientation="portrait"
+29-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:23:13-49
+30            android:windowSoftInputMode="stateHidden|stateUnchanged"
+30-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:24:13-69
+31            tools:ignore="LockedOrientationActivity" />
+31-->E:\AndroidProject\MediaManage\MediaSelect\src\main\AndroidManifest.xml:25:13-53
+32    </application>
+33
+34</manifest>

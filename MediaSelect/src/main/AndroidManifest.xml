@@ -4,6 +4,7 @@
     package="com.nightrain.mediaselect">
 
     <application>
+        <activity android:name=".ui.AudioSelectActivity"></activity>
         <activity
             android:name=".ui.VideoSelectActivity"
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden|uiMode"

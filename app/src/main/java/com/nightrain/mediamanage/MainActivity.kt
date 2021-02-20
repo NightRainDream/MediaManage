@@ -1,6 +1,8 @@
 package com.nightrain.mediamanage
 
+import android.media.MediaPlayer
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
@@ -12,8 +14,8 @@ import com.nightrain.mediaselect.entity.MediaEntity
 import com.nightrain.mediaselect.listener.MediaSelectCallback
 
 class MainActivity : AppCompatActivity() {
-        private lateinit var iv_picture: ImageView
-        private lateinit var iv_video: VideoView
+    private lateinit var iv_picture: ImageView
+    private lateinit var iv_video: VideoView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -23,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
     fun selectPicture(view: View) {
         MediaSelectHelp.BuildSelectPicture()
+            .isDisplayGIF(true)
             .launch(this, object : MediaSelectCallback {
                 override fun onSelectSuccess(entity: MediaEntity) {
                     Glide.with(this@MainActivity)
@@ -58,6 +61,22 @@ class MainActivity : AppCompatActivity() {
                     iv_video.setVideoURI(entity.mediaUri)
                     iv_video.requestFocus()
                     iv_video.start()
+                }
+
+                override fun onSelectError(error: String) {
+                    Toast.makeText(this@MainActivity, error, Toast.LENGTH_LONG).show()
+                }
+            })
+    }
+
+    fun selectAudio(view: View) {
+        MediaSelectHelp.BuildSelectAudio()
+            .launch(this, object : MediaSelectCallback {
+                override fun onSelectSuccess(entity: MediaEntity) {
+                    val play = MediaPlayer()
+                    play.setDataSource(this@MainActivity,entity.mediaUri)
+                    play.prepare()
+                    play.start()
                 }
 
                 override fun onSelectError(error: String) {

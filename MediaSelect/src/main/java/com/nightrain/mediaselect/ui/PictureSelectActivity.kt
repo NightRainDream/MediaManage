@@ -26,22 +26,26 @@ class PictureSelectActivity : BaseActivity() {
     companion object {
         fun launchActivity(
             activity: Activity,
-            titleBackGroundColor: Int = MediaSelectHelp.sTitleColor
+            titleBackGroundColor: Int = MediaSelectHelp.sTitleColor,
+            isDisplayGIF: Boolean = false
         ) {
             if (ClickTool.isClick()) {
                 val intent = Intent(activity, PictureSelectActivity::class.java)
                 intent.putExtra(KEY_TITLE_COLOR, titleBackGroundColor)
+                intent.putExtra("isDisplayGIF", isDisplayGIF)
                 activity.startActivity(intent)
             }
         }
 
         fun launchActivity(
             fragment: Fragment,
-            titleBackGroundColor: Int = MediaSelectHelp.sTitleColor
+            titleBackGroundColor: Int = MediaSelectHelp.sTitleColor,
+            isDisplayGIF: Boolean = false
         ) {
             if (ClickTool.isClick()) {
                 val intent = Intent(fragment.context, PictureSelectActivity::class.java)
                 intent.putExtra(KEY_TITLE_COLOR, titleBackGroundColor)
+                intent.putExtra("isDisplayGIF", isDisplayGIF)
                 fragment.startActivity(intent)
             }
         }
@@ -90,13 +94,13 @@ class PictureSelectActivity : BaseActivity() {
     }
 
     override fun initData(savedInstanceState: Bundle?) {
-        MediaDataTool.loadImageResources(this, object : LoadMediaCallback {
+        MediaDataTool.loadImageResources(this,intent.getBooleanExtra("isDisplayGIF",false), object : LoadMediaCallback {
             override fun loadSuccess(medias: MutableList<MediaEntity>) {
-               runOnUiThread {
-                   mPictures.clear()
-                   mPictures.addAll(medias)
-                   mPictureAdapter.notifyDataSetChanged()
-               }
+                runOnUiThread {
+                    mPictures.clear()
+                    mPictures.addAll(medias)
+                    mPictureAdapter.notifyDataSetChanged()
+                }
             }
         })
     }

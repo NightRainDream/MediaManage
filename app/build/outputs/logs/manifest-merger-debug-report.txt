@@ -1,10 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:2:1-26:12
-MERGED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-33:12
+ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:2:1-25:12
+MERGED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-34:12
 MERGED from [androidx.core:core-ktx:1.3.2] C:\Users\NightRain\.gradle\caches\transforms-2\files-2.1\2d0969fa6152c985618655273f5ba553\jetified-core-ktx-1.3.2\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\NightRain\.gradle\caches\transforms-2\files-2.1\30ad1e15796e6079032b90678b801862\material-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\NightRain\.gradle\caches\transforms-2\files-2.1\2817580fb52b01b6a3b967c0143d9134\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
@@ -37,20 +37,20 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\NightRain\.gr
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\NightRain\.gradle\caches\transforms-2\files-2.1\535b316eb59403c1a9122a03636063ed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\NightRain\.gradle\caches\transforms-2\files-2.1\8d4ca56c128363fbcd558fe6d20ec511\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\NightRain\.gradle\caches\transforms-2\files-2.1\2d9959f3a90288d3a16c8d3481853e50\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:3:5-40
 		INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml
 		INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml
-		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:2:1-25:12
 		INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml
-		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:2:1-25:12
 		INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:2:11-69
@@ -62,14 +62,10 @@ uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:6:5-80
 	android:name
 		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:6:22-77
-uses-permission#android.permission.MANAGE_EXTERNAL_STORAGE
-ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:7:5-82
-	android:name
-		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:7:22-79
 application
-ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:9:5-24:19
-MERGED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-31:19
-MERGED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-31:19
+ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:8:5-23:19
+MERGED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-32:19
+MERGED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-32:19
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\NightRain\.gradle\caches\transforms-2\files-2.1\30ad1e15796e6079032b90678b801862\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\NightRain\.gradle\caches\transforms-2\files-2.1\30ad1e15796e6079032b90678b801862\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\NightRain\.gradle\caches\transforms-2\files-2.1\2817580fb52b01b6a3b967c0143d9134\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -85,33 +81,33 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ni
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.2] C:\Users\NightRain\.gradle\caches\transforms-2\files-2.1\3414d4f8c6d2974484da138475b51c4f\core-1.3.2\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:13:9-41
+		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:14:9-54
+		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:12:9-43
+		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:16:9-49
+		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:15:9-49
 	android:name
-		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:10:9-38
+		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:9:9-38
 activity#com.nightrain.mediamanage.MainActivity
-ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:17:9-23:20
+ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:16:9-22:20
 	android:name
-		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:17:19-47
+		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:16:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:18:13-22:29
+ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:19:17-69
+ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:19:25-66
+		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:21:17-77
+ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:21:27-74
+		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml:20:27-74
 uses-sdk
 INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml
@@ -192,39 +188,43 @@ INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml
 		INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml
 		ADDED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml
 		INJECTED from E:\AndroidProject\MediaManage\app\src\main\AndroidManifest.xml
+activity#com.nightrain.mediaselect.ui.AudioSelectActivity
+ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-85
+	android:name
+		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:19-82
 activity#com.nightrain.mediaselect.ui.VideoSelectActivity
-ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-18:56
+ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-19:56
 	android:screenOrientation
-		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-49
+		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-49
 	android:windowSoftInputMode
-		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-69
+		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-69
 	tools:ignore
-		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-53
+		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-53
 	android:configChanges
-		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-90
+		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-90
 	android:name
-		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-76
+		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-76
 activity#com.nightrain.mediaselect.ui.GIFSelectActivity
-ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-24:56
+ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:9-25:56
 	android:screenOrientation
-		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-49
+		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-49
 	android:windowSoftInputMode
-		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-69
+		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-69
 	tools:ignore
-		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-53
+		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-53
 	android:configChanges
-		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-90
+		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-90
 	android:name
-		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-74
+		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-74
 activity#com.nightrain.mediaselect.ui.PictureSelectActivity
-ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:9-30:56
+ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:9-31:56
 	android:screenOrientation
-		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-49
+		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-49
 	android:windowSoftInputMode
-		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-69
+		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:13-69
 	tools:ignore
-		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:13-53
+		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-53
 	android:configChanges
-		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-90
+		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-90
 	android:name
-		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-78
+		ADDED from [:MediaSelect] E:\AndroidProject\MediaManage\MediaSelect\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-78

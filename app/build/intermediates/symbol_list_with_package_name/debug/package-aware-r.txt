@@ -1963,6 +1963,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_audio_file
 drawable ic_baseline_arrow_back_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1970,6 +1971,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_next_24
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
 drawable material_ic_edit_black_24dp
@@ -2271,6 +2273,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rv_audio
 id rv_picture
 id save_non_transition_alpha
 id save_overlay_view
@@ -2371,6 +2374,7 @@ id triangle
 id tv_custom_cancel
 id tv_custom_title
 id tv_item_name
+id tv_item_size
 id unchecked
 id uniform
 id unlabeled
@@ -2443,6 +2447,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_audio_select
 layout activity_g_i_f_select
 layout activity_main
 layout activity_picture_select
@@ -2464,6 +2469,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout item_audio
 layout item_gif
 layout item_picture
 layout item_video
@@ -2608,8 +2614,8 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
+string title_audio
 string title_gif
-string title_pdf
 string title_picture
 string title_video
 string toast_cancel

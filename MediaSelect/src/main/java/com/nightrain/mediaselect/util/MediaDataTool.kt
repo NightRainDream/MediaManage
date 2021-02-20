@@ -19,19 +19,6 @@ private const val TAG = "MediaDataTool"
 
 object MediaDataTool {
 
-    fun loadPDFResources(context: Context, listener: LoadMediaCallback) {
-
-        if (checkPermission(context)) {
-            Thread {
-                DocumentsContract.EXTRA_INITIAL_URI
-
-            }.start()
-        } else {
-            Log.w(TAG, "loadVideoResources: 请检查读写权限是否打开")
-        }
-    }
-
-
     fun loadGIFResources(context: Context, listener: LoadMediaCallback) {
         if (checkPermission(context)) {
             Thread {
@@ -39,6 +26,7 @@ object MediaDataTool {
                 val projection = arrayOf(
                     MediaStore.Files.FileColumns._ID,
                     MediaStore.Files.FileColumns.DISPLAY_NAME,
+                    MediaStore.Files.FileColumns.SIZE
                 )
                 val select = "(_data LIKE '%.gif')"
                 val cursor = context.contentResolver.query(
@@ -57,10 +45,13 @@ object MediaDataTool {
                         )
                         val fileName =
                             cursor.getString(cursor.getColumnIndex(MediaStore.Files.FileColumns.DISPLAY_NAME))
+                        val fileSize =
+                            cursor.getLong(cursor.getColumnIndex(MediaStore.Files.FileColumns.SIZE))
                         gifs.add(
                             MediaEntity(
                                 uri,
-                                fileName
+                                fileName,
+                                fileSize
                             )
                         )
                     }
@@ -74,13 +65,18 @@ object MediaDataTool {
     }
 
 
-    fun loadImageResources(context: Context, listener: LoadMediaCallback) {
+    fun loadImageResources(
+        context: Context,
+        isDisplayGIF: Boolean = false,
+        listener: LoadMediaCallback
+    ) {
         if (checkPermission(context)) {
             Thread {
                 val images = mutableListOf<MediaEntity>()
                 val projection = arrayOf(
                     MediaStore.Images.ImageColumns._ID,
                     MediaStore.Images.ImageColumns.DISPLAY_NAME,
+                    MediaStore.Images.ImageColumns.SIZE
                 )
                 val cursor = context.contentResolver.query(
                     MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
@@ -100,13 +96,27 @@ object MediaDataTool {
                         //文件名称
                         val fileName =
                             cursor.getString(cursor.getColumnIndex(MediaStore.Images.ImageColumns.DISPLAY_NAME))
-                        if (!fileName.contains(".gif")) {
+
+                        val fileSize =
+                            cursor.getLong(cursor.getColumnIndex(MediaStore.Images.ImageColumns.SIZE))
+                        if (isDisplayGIF) {
                             images.add(
                                 MediaEntity(
                                     uri,
-                                    fileName
+                                    fileName,
+                                    fileSize
                                 )
                             )
+                        } else {
+                            if (!fileName.contains(".gif")) {
+                                images.add(
+                                    MediaEntity(
+                                        uri,
+                                        fileName,
+                                        fileSize
+                                    )
+                                )
+                            }
                         }
                     }
                     cursor.close()
@@ -125,6 +135,7 @@ object MediaDataTool {
                 val projection = arrayOf(
                     MediaStore.Video.VideoColumns._ID,
                     MediaStore.Video.VideoColumns.DISPLAY_NAME,
+                    MediaStore.Video.VideoColumns.SIZE
                 )
                 val cursor = context.contentResolver.query(
                     MediaStore.Video.Media.EXTERNAL_CONTENT_URI,
@@ -142,7 +153,9 @@ object MediaDataTool {
                         )
                         val fileName =
                             cursor.getString(cursor.getColumnIndex(MediaStore.Video.VideoColumns.DISPLAY_NAME))
-                        videos.add(MediaEntity(uri, fileName))
+                        val fileSize =
+                            cursor.getLong(cursor.getColumnIndex(MediaStore.Video.VideoColumns.SIZE))
+                        videos.add(MediaEntity(uri, fileName,fileSize))
                     }
                     cursor.close()
                     listener.loadSuccess(videos)
@@ -152,6 +165,45 @@ object MediaDataTool {
             Log.w(TAG, "loadVideoResources: 请检查读写权限是否打开")
         }
     }
+
+    fun loadAudioResources(context: Context, listener: LoadMediaCallback) {
+        if (checkPermission(context)) {
+            Thread {
+                val audios = mutableListOf<MediaEntity>()
+                val projection = arrayOf(
+                    MediaStore.Audio.AudioColumns._ID,
+                    MediaStore.Audio.AudioColumns.DISPLAY_NAME,
+                    MediaStore.Audio.AudioColumns.SIZE
+                )
+                val cursor = context.contentResolver.query(
+                    MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,
+                    projection,
+                    null,
+                    null,
+                    MediaStore.Audio.AudioColumns.DATE_MODIFIED + "  desc"
+                )
+                if (cursor != null) {
+                    while (cursor.moveToNext()) {
+                        val id =
+                            cursor.getLong(cursor.getColumnIndexOrThrow(MediaStore.Audio.Media._ID))
+                        val uri = ContentUris.withAppendedId(
+                            MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, id
+                        )
+                        val fileName =
+                            cursor.getString(cursor.getColumnIndex(MediaStore.Audio.AudioColumns.DISPLAY_NAME))
+                        val fileSize =
+                            cursor.getLong(cursor.getColumnIndex(MediaStore.Audio.AudioColumns.SIZE))
+                        audios.add(MediaEntity(uri, fileName,fileSize))
+                    }
+                    cursor.close()
+                    listener.loadSuccess(audios)
+                }
+            }.start()
+        } else {
+            Log.w(TAG, "loadVideoResources: 请检查读写权限是否打开")
+        }
+    }
+
 
     private fun checkPermission(context: Context): Boolean {
         return (ContextCompat.checkSelfPermission(
