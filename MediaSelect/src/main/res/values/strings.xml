@@ -1,0 +1,7 @@
+<resources>
+    <string name="title_picture">图片选择</string>
+    <string name="title_gif">GIF选择</string>
+    <string name="title_video">视频选择</string>
+    <string name="title_pdf">PDF选择</string>
+    <string name="toast_cancel">取消选择</string>
+</resources>
