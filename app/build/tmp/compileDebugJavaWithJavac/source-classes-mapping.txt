@@ -1,0 +1,2 @@
+com/nightrain/mediamanage/BuildConfig.java
+ com.nightrain.mediamanage.BuildConfig

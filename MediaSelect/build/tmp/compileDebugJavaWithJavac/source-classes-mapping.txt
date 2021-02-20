@@ -1,0 +1,4 @@
+com/nightrain/mediaselect/entity/MediaEntity.java
+ com.nightrain.mediaselect.entity.MediaEntity
+com/nightrain/mediaselect/BuildConfig.java
+ com.nightrain.mediaselect.BuildConfig
