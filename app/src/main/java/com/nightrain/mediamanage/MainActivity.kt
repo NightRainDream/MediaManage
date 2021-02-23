@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
 
     fun selectPicture(view: View) {
         MediaSelectHelp.BuildSelectPicture()
-            .isDisplayGIF(true)
             .launch(this, object : MediaSelectCallback {
                 override fun onSelectSuccess(entity: MediaEntity) {
                     Glide.with(this@MainActivity)

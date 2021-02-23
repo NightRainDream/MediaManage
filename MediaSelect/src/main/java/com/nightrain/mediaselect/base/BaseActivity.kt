@@ -9,6 +9,7 @@ import com.nightrain.mediaselect.R
 const val KEY_TITLE_COLOR = "titleBackGroundColor"
 
 abstract class BaseActivity : AppCompatActivity() {
+    val PERMISSION_REQUEST_CODE = 201
     open var mTitleView: CustomTitleView? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
